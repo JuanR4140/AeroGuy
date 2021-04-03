@@ -1,7 +1,7 @@
 # AeroGuy
 AreoGuy is a Nintendo DS game made with libnds and NightFox Lib to demonstrate and to hopefully show others the ways of making a DS game as most documentation available online is vague. Hopefully this helps and you like the game too ^^
 
-# ---
+# I am NOT an expert in DS coding, as I only started two weeks ago, so don't expect the best of code. If you run into an error or get confused or stuck in some parts (I understand, I'm bad at explaining after all) feel free to message me on Discord: JuanR4140#0242. Happy coding!
 
 # How-To
 If you're a weird person and you'd like to code for a 15 year old console rather than using a modern thing like Unity or Unreal Engine, then you'd come to the.. right.. wrong... place? I'll add how to do stuff here the more I learn about NFLib and libnds. I'm by no means an expert, so don't expect the top quality code here.
