@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> 
 #include <stdlib.h>
 #include <nds.h>
 #include <gl2d.h>
@@ -9,7 +9,7 @@
 #include "game.h"
 
 int main(void){
-    init();
-    titleScreen();
-    game();
+    init(); //function to initialize the DS
+    titleScreen(); //function to run the title screen
+    game(); //function to run the main game
 }
