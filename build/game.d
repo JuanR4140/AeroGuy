@@ -1,6 +1,7 @@
 game.o: C\:/Users/juanr/Desktop/AeroGuyRedo/source/game.c \
  C\:/Users/juanr/Desktop/AeroGuyRedo/source/game.h \
  C\:/Users/juanr/Desktop/AeroGuyRedo/source/move.h \
+ C\:/Users/juanr/Desktop/AeroGuyRedo/source/collision.h \
  C\:/Users/juanr/Desktop/AeroGuyRedo/nflib/include/nf_lib.h \
  C\:/Users/juanr/Desktop/AeroGuyRedo/nflib/include/nf_defines.h \
  C\:/Users/juanr/Desktop/AeroGuyRedo/nflib/include/nf_basic.h \
@@ -80,6 +81,7 @@ game.o: C\:/Users/juanr/Desktop/AeroGuyRedo/source/game.c \
  C\:/Users/juanr/Desktop/AeroGuyRedo/nflib/include/nf_sprite3d.h
 C\:/Users/juanr/Desktop/AeroGuyRedo/source/game.h:
 C\:/Users/juanr/Desktop/AeroGuyRedo/source/move.h:
+C\:/Users/juanr/Desktop/AeroGuyRedo/source/collision.h:
 C\:/Users/juanr/Desktop/AeroGuyRedo/nflib/include/nf_lib.h:
 C\:/Users/juanr/Desktop/AeroGuyRedo/nflib/include/nf_defines.h:
 C\:/Users/juanr/Desktop/AeroGuyRedo/nflib/include/nf_basic.h:
