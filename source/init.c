@@ -10,6 +10,8 @@ void init(){
     NF_InitTiledBgSys(0); //initalize the bg system on the top screen
     NF_InitTiledBgSys(1); //initalize the bg system on the bottom screen
 
+    NF_InitTextSys(1); //initalize the text system on the bottom screen
+
     NF_InitSpriteBuffers(); //initalize the sprite buffers
     NF_InitSpriteSys(0); //initalize the sprite system on the top screen
     NF_InitSpriteSys(1); //initalize the sprite system on the bottom screen
