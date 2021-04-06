@@ -9,7 +9,9 @@
 #include "game.h"
 
 int main(void){
-    init(); //function to initialize the DS
-    titleScreen(); //function to run the title screen
-    game(); //function to run the main game
+    while(1){
+        init(); //function to initialize the DS
+        titleScreen(); //function to run the title screen
+        game(); //function to run the main game
+    }
 }

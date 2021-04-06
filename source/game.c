@@ -28,6 +28,7 @@ void game(){
     NF_VramSpritePal(0, 1, 1); //move the pollution palette into vram on the top screen, with the id of 1 and the slot of 1
 
     NF_LoadTiledBg("bg/daybg", "day", 256, 256); //load a bg from the folder "bg" in "nitrofiles" folder called "daybg" with the nickname of "day" and tell the width and height
+    NF_LoadTiledBg("bg/gameover", "gameover", 256, 256); //load game over bg
     NF_CreateTiledBg(0, 0, "day"); //create a bg on the top screen, layer 0, with the loaded bg "day"
     NF_CreateTiledBg(1, 0, "day");
 
@@ -40,7 +41,6 @@ void game(){
     NF_CreateSprite(0, 0, 0, 0, player.x, player.y); //create a sprite on the top screen, with the id, gfx, and palette of 0 and x and y of the player (50 x; 90 y)
     NF_CreateSprite(0, 1, 1, 1, pollution.x, pollution.y); //create a sprite on the top screen, with the id, gfx and palette of 1 and x and y of the pollution (250 x; 90 y;)
     while(1){ //while true, repeats forever
-
         scanKeys(); //scan keys (I.E the up, left, bottom, right, START, SELECT keys)
         int keys = keysHeld();  //make a boolean (0 = false; 1 = true) to determine if the keys are being held
         
@@ -58,10 +58,29 @@ void game(){
         NF_MoveSprite(0, 1, pollution.x, pollution.y);
 
         if(checkCollision(player.x, player.y, 16, pollution.x, pollution.y, 32)){ // if checking the collision (passing the x, y, sizes of both objects) returns 1 (true),
-            break; // break out of the game (crashing the NDS, but we'll make it do something else later)
+            NF_CreateTiledBg(0, 0, "gameover"); //create a bg on the bottom screen with layer 0 with the loaded bg "gameover"
+            NF_DeleteSprite(0, 0); //delete the player sprite (id 0) from the top screen
+            NF_DeleteSprite(0, 1); //delete the pollution sprite (id 1) from the top screen
+            break; // break out of the game (advancing us to the next while true loop)
         }
         NF_SpriteOamSet(0); //set the OAM (Object Attribute Memory (place in memory that deals with sprites)) on the top screen
         swiWaitForVBlank(); //wait for the Vertical Blank
+        oamUpdate(&oamMain); //update the OAM
+    }
+
+    while(1){
+        scanKeys(); //scan keys for input
+        int keys = keysHeld(); //boolean if keys are held
+        if(keys & KEY_START) break; //if keys are held, break out the loop, which would bring us to the title screen as main.c is a while true loop itself
+        NF_WriteText(1, 0, 9, 5, "YOU LOST!"); //make text on top screen, layer 0, 9 x; 5 y; saying "YOU LOST!"
+        sprintf(sscore, "Total Game Score: %d", score); //convert score into a string and store it in sscore
+        NF_WriteText(1, 0, 5, 7, sscore); //write text stored in sscore
+        NF_WriteText(1, 0, 7, 12, "Try again?"); //write text saying "Try again?"
+        NF_WriteText(1, 0, 3, 14, "Press START to try again!"); //write text explaining how to try again
+        NF_UpdateTextLayers(); //update the text layers
+
+        NF_SpriteOamSet(0); //set the OAM on the top screen
+        swiWaitForVBlank(); //wait for Vertical Blank
         oamUpdate(&oamMain); //update the OAM
     }
 }
