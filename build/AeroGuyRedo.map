@@ -1441,92 +1441,92 @@ Linker script and memory map
  *(EXCLUDE_FILE(*.twl* *.vectors* *.itcm*) .text)
  .text          0x0000000002000b40       0x2c collision.o
                 0x0000000002000b40                checkCollision
- .text          0x0000000002000b6c      0x1cc game.o
+ .text          0x0000000002000b6c      0x1c4 game.o
                 0x0000000002000b6c                game
- .text          0x0000000002000d38       0x44 init.o
-                0x0000000002000d38                init
- .text          0x0000000002000d7c       0x2c move.o
-                0x0000000002000d7c                move
- .text          0x0000000002000da8       0x68 titleScreen.o
-                0x0000000002000da8                titleScreen
- .text          0x0000000002000e10      0x868 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
-                0x0000000002000e10                NF_Set2D
-                0x0000000002000e74                NF_ShowBg
-                0x0000000002000ef0                NF_HideBg
-                0x0000000002000f94                NF_ScrollBg
-                0x0000000002001304                NF_MoveSprite
-                0x0000000002001324                NF_SpriteLayer
-                0x0000000002001340                NF_ShowSprite
-                0x0000000002001360                NF_HflipSprite
-                0x000000000200137c                NF_GetSpriteHflip
-                0x0000000002001398                NF_VflipSprite
-                0x00000000020013b4                NF_GetSpriteVflip
-                0x00000000020013d0                NF_SpriteFrame
-                0x000000000200149c                NF_EnableSpriteRotScale
-                0x0000000002001534                NF_DisableSpriteRotScale
-                0x00000000020015a8                NF_SpriteRotScale
- .text          0x0000000002001678      0x474 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
-                0x0000000002001678                NF_Error
-                0x0000000002001900                NF_SetRootFolder
-                0x0000000002001a58                NF_DmaMemCopy
-                0x0000000002001adc                NF_GetLanguage
- .text          0x0000000002001aec     0x1358 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
-                0x0000000002001aec                NF_InitSpriteBuffers
-                0x0000000002001b38                NF_ResetSpriteBuffers
-                0x0000000002001b6c                NF_InitSpriteSys
-                0x0000000002001d78                NF_LoadSpriteGfx
-                0x0000000002001e90                NF_UnloadSpriteGfx
-                0x0000000002001ef8                NF_LoadSpritePal
-                0x0000000002001ffc                NF_UnloadSpritePal
-                0x000000000200204c                NF_VramSpriteGfx
-                0x0000000002002384                NF_VramSpriteGfxDefrag
-                0x00000000020025a0                NF_FreeSpriteGfx
-                0x00000000020026a8                NF_VramSpritePal
-                0x0000000002002774                NF_CreateSprite
-                0x0000000002002aa4                NF_DeleteSprite
-                0x0000000002002b44                NF_SpriteOamSet
-                0x0000000002002c34                NF_SpriteSetPalColor
-                0x0000000002002ccc                NF_SpriteEditPalColor
-                0x0000000002002d48                NF_SpriteUpdatePalette
-                0x0000000002002dd8                NF_SpriteGetPalColor
- .text          0x0000000002002e44      0x95c C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
-                0x0000000002002e44                NF_InitTextSys
-                0x0000000002002e78                NF_LoadTextFont
-                0x00000000020030d0                NF_UnloadTextFont
-                0x00000000020030d8                NF_CreateTextLayer
-                0x000000000200316c                NF_DeleteTextLayer
-                0x00000000020031c4                NF_WriteText
-                0x0000000002003624                NF_UpdateTextLayers
-                0x0000000002003678                NF_ClearTextLayer
-                0x00000000020036e0                NF_DefineTextColor
-                0x0000000002003784                NF_SetTextColor
- .text          0x00000000020037a0     0x1a84 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
-                0x00000000020037a0                NF_InitTiledBgBuffers
-                0x0000000002003858                NF_ResetTiledBgBuffers
-                0x00000000020038a8                NF_InitTiledBgSys
-                0x00000000020039dc                NF_LoadTiledBg
-                0x0000000002003c60                NF_LoadTilesForBg
-                0x0000000002003ee0                NF_UnloadTiledBg
-                0x0000000002003f90                NF_DeleteTiledBg
-                0x0000000002004138                NF_CreateTiledBg
-                0x00000000020047f8                NF_GetTileMapAdress
-                0x00000000020048b4                NF_GetTileOfMap
-                0x00000000020048f0                NF_SetTileOfMap
-                0x0000000002004934                NF_UpdateVramMap
-                0x0000000002004a54                NF_BgSetPalColor
-                0x0000000002004b04                NF_BgEditPalColor
-                0x0000000002004bac                NF_BgUpdatePalette
-                0x0000000002004c6c                NF_BgGetPalColor
-                0x0000000002004d04                NF_GetTilePal
-                0x0000000002004d38                NF_SetTilePal
-                0x0000000002004d7c                NF_LoadExBgPal
-                0x0000000002004e5c                NF_UnloadExBgPal
-                0x0000000002004ea8                NF_VramExBgPal
-                0x0000000002004f50                NF_SetExBgPal
-                0x0000000002005010                NF_SetTileHflip
-                0x000000000200504c                NF_SetTileVflip
-                0x0000000002005088                NF_RotateTileGfx
- *fill*         0x0000000002005224       0x1c ff
+ .text          0x0000000002000d30       0x44 init.o
+                0x0000000002000d30                init
+ .text          0x0000000002000d74       0x2c move.o
+                0x0000000002000d74                move
+ .text          0x0000000002000da0       0x68 titleScreen.o
+                0x0000000002000da0                titleScreen
+ .text          0x0000000002000e08      0x868 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
+                0x0000000002000e08                NF_Set2D
+                0x0000000002000e6c                NF_ShowBg
+                0x0000000002000ee8                NF_HideBg
+                0x0000000002000f8c                NF_ScrollBg
+                0x00000000020012fc                NF_MoveSprite
+                0x000000000200131c                NF_SpriteLayer
+                0x0000000002001338                NF_ShowSprite
+                0x0000000002001358                NF_HflipSprite
+                0x0000000002001374                NF_GetSpriteHflip
+                0x0000000002001390                NF_VflipSprite
+                0x00000000020013ac                NF_GetSpriteVflip
+                0x00000000020013c8                NF_SpriteFrame
+                0x0000000002001494                NF_EnableSpriteRotScale
+                0x000000000200152c                NF_DisableSpriteRotScale
+                0x00000000020015a0                NF_SpriteRotScale
+ .text          0x0000000002001670      0x474 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
+                0x0000000002001670                NF_Error
+                0x00000000020018f8                NF_SetRootFolder
+                0x0000000002001a50                NF_DmaMemCopy
+                0x0000000002001ad4                NF_GetLanguage
+ .text          0x0000000002001ae4     0x1358 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
+                0x0000000002001ae4                NF_InitSpriteBuffers
+                0x0000000002001b30                NF_ResetSpriteBuffers
+                0x0000000002001b64                NF_InitSpriteSys
+                0x0000000002001d70                NF_LoadSpriteGfx
+                0x0000000002001e88                NF_UnloadSpriteGfx
+                0x0000000002001ef0                NF_LoadSpritePal
+                0x0000000002001ff4                NF_UnloadSpritePal
+                0x0000000002002044                NF_VramSpriteGfx
+                0x000000000200237c                NF_VramSpriteGfxDefrag
+                0x0000000002002598                NF_FreeSpriteGfx
+                0x00000000020026a0                NF_VramSpritePal
+                0x000000000200276c                NF_CreateSprite
+                0x0000000002002a9c                NF_DeleteSprite
+                0x0000000002002b3c                NF_SpriteOamSet
+                0x0000000002002c2c                NF_SpriteSetPalColor
+                0x0000000002002cc4                NF_SpriteEditPalColor
+                0x0000000002002d40                NF_SpriteUpdatePalette
+                0x0000000002002dd0                NF_SpriteGetPalColor
+ .text          0x0000000002002e3c      0x95c C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
+                0x0000000002002e3c                NF_InitTextSys
+                0x0000000002002e70                NF_LoadTextFont
+                0x00000000020030c8                NF_UnloadTextFont
+                0x00000000020030d0                NF_CreateTextLayer
+                0x0000000002003164                NF_DeleteTextLayer
+                0x00000000020031bc                NF_WriteText
+                0x000000000200361c                NF_UpdateTextLayers
+                0x0000000002003670                NF_ClearTextLayer
+                0x00000000020036d8                NF_DefineTextColor
+                0x000000000200377c                NF_SetTextColor
+ .text          0x0000000002003798     0x1a84 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
+                0x0000000002003798                NF_InitTiledBgBuffers
+                0x0000000002003850                NF_ResetTiledBgBuffers
+                0x00000000020038a0                NF_InitTiledBgSys
+                0x00000000020039d4                NF_LoadTiledBg
+                0x0000000002003c58                NF_LoadTilesForBg
+                0x0000000002003ed8                NF_UnloadTiledBg
+                0x0000000002003f88                NF_DeleteTiledBg
+                0x0000000002004130                NF_CreateTiledBg
+                0x00000000020047f0                NF_GetTileMapAdress
+                0x00000000020048ac                NF_GetTileOfMap
+                0x00000000020048e8                NF_SetTileOfMap
+                0x000000000200492c                NF_UpdateVramMap
+                0x0000000002004a4c                NF_BgSetPalColor
+                0x0000000002004afc                NF_BgEditPalColor
+                0x0000000002004ba4                NF_BgUpdatePalette
+                0x0000000002004c64                NF_BgGetPalColor
+                0x0000000002004cfc                NF_GetTilePal
+                0x0000000002004d30                NF_SetTilePal
+                0x0000000002004d74                NF_LoadExBgPal
+                0x0000000002004e54                NF_UnloadExBgPal
+                0x0000000002004ea0                NF_VramExBgPal
+                0x0000000002004f48                NF_SetExBgPal
+                0x0000000002005008                NF_SetTileHflip
+                0x0000000002005044                NF_SetTileVflip
+                0x0000000002005080                NF_RotateTileGfx
+ *fill*         0x000000000200521c       0x24 ff
  .text          0x0000000002005240     0x4000 C:/devkitPro/libnds/lib\libnds9.a(dldi_stub.o)
                 0x0000000002005240                _io_dldi_stub
  .text          0x0000000002009240      0x11c c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/10.2.0/thumb\libgcc.a(_udivsi3.o)
@@ -3812,55 +3812,55 @@ ARM.exidx
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x0000000000000000    0x2a547
+.debug_info     0x0000000000000000    0x2a533
  *(.debug_info)
  .debug_info    0x0000000000000000       0xb0 collision.o
- .debug_info    0x00000000000000b0      0xe10 game.o
- .debug_info    0x0000000000000ec0      0x4bf init.o
- .debug_info    0x000000000000137f      0x3fa main.o
- .debug_info    0x0000000000001779      0x450 move.o
- .debug_info    0x0000000000001bc9      0x54a titleScreen.o
- .debug_info    0x0000000000002113     0x1530 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
- .debug_info    0x0000000000003643      0x8b7 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
- .debug_info    0x0000000000003efa     0x2412 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
- .debug_info    0x000000000000630c     0x15d3 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
- .debug_info    0x00000000000078df     0x2657 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
- .debug_info    0x0000000000009f36     0x2897 C:/devkitPro/libnds/lib\libfilesystem.a(nitrofs.o)
- .debug_info    0x000000000000c7cd     0x204d C:/devkitPro/libnds/lib\libfat.a(libfat.o)
- .debug_info    0x000000000000e81a      0x260 C:/devkitPro/libnds/lib\libfat.a(disc.o)
- .debug_info    0x000000000000ea7a     0x3783 C:/devkitPro/libnds/lib\libfat.a(fatfile.o)
- .debug_info    0x00000000000121fd     0x12da C:/devkitPro/libnds/lib\libfat.a(cache.o)
- .debug_info    0x00000000000134d7     0x2833 C:/devkitPro/libnds/lib\libfat.a(fatdir.o)
- .debug_info    0x0000000000015d0a     0x2fcb C:/devkitPro/libnds/lib\libfat.a(directory.o)
- .debug_info    0x0000000000018cd5     0x2c74 C:/devkitPro/libnds/lib\libfat.a(partition.o)
- .debug_info    0x000000000001b949      0x11d C:/devkitPro/libnds/lib\libfat.a(lock.o)
- .debug_info    0x000000000001ba66      0x289 C:/devkitPro/libnds/lib\libfat.a(filetime.o)
- .debug_info    0x000000000001bcef      0xf1c C:/devkitPro/libnds/lib\libfat.a(file_allocation_table.o)
- .debug_info    0x000000000001cc0b      0x7c5 C:/devkitPro/libnds/lib\libnds9.a(video.o)
- .debug_info    0x000000000001d3d0     0x26d9 C:/devkitPro/libnds/lib\libnds9.a(console.o)
- .debug_info    0x000000000001faa9      0xda6 C:/devkitPro/libnds/lib\libnds9.a(sprite.o)
- .debug_info    0x000000000002084f      0x466 C:/devkitPro/libnds/lib\libnds9.a(keys.o)
- .debug_info    0x0000000000020cb5      0xb36 C:/devkitPro/libnds/lib\libnds9.a(dldi.o)
- .debug_info    0x00000000000217eb     0x12a5 C:/devkitPro/libnds/lib\libnds9.a(initSystem.o)
- .debug_info    0x0000000000022a90      0xa64 C:/devkitPro/libnds/lib\libnds9.a(timeSupport.o)
- .debug_info    0x00000000000234f4       0x59 C:/devkitPro/libnds/lib\libnds9.a(securearea.o)
- .debug_info    0x000000000002354d      0x68f C:/devkitPro/libnds/lib\libnds9.a(interrupts.o)
- .debug_info    0x0000000000023bdc      0x378 C:/devkitPro/libnds/lib\libnds9.a(libnds_exit.arm.o)
- .debug_info    0x0000000000023f54      0x6b8 C:/devkitPro/libnds/lib\libnds9.a(card.o)
- .debug_info    0x000000000002460c     0x189c C:/devkitPro/libnds/lib\libnds9.a(fifosystem.o)
- .debug_info    0x0000000000025ea8       0x22 C:/devkitPro/libnds/lib\libnds9.a(dcache.o)
- .debug_info    0x0000000000025eca       0x26 C:/devkitPro/libnds/lib\libnds9.a(dldi_stub.o)
- .debug_info    0x0000000000025ef0       0x22 C:/devkitPro/libnds/lib\libnds9.a(mpu_setup.o)
- .debug_info    0x0000000000025f12       0x22 C:/devkitPro/libnds/lib\libnds9.a(IntrWait.o)
- .debug_info    0x0000000000025f34       0x26 C:/devkitPro/libnds/lib\libnds9.a(cpu_clock.o)
- .debug_info    0x0000000000025f5a       0x26 C:/devkitPro/libnds/lib\libnds9.a(interruptDispatcher.o)
- .debug_info    0x0000000000025f80       0x26 C:/devkitPro/libnds/lib\libnds9.a(swiSoftReset.o)
- .debug_info    0x0000000000025fa6       0x22 C:/devkitPro/libnds/lib\libnds9.a(biosCalls.o)
- .debug_info    0x0000000000025fc8      0xacd C:/devkitPro/libnds/lib\libnds9.a(background.o)
- .debug_info    0x0000000000026a95     0x1d8b C:/devkitPro/libnds/lib\libnds9.a(sprite_alloc.o)
- .debug_info    0x0000000000028820      0xa85 C:/devkitPro/libnds/lib\libnds9.a(system.o)
- .debug_info    0x00000000000292a5      0x79b C:/devkitPro/libnds/lib\libnds9.a(trig.o)
- .debug_info    0x0000000000029a40      0xb07 C:/devkitPro/libnds/lib\libnds9.a(sd.twl.o)
+ .debug_info    0x00000000000000b0      0xdfc game.o
+ .debug_info    0x0000000000000eac      0x4bf init.o
+ .debug_info    0x000000000000136b      0x3fa main.o
+ .debug_info    0x0000000000001765      0x450 move.o
+ .debug_info    0x0000000000001bb5      0x54a titleScreen.o
+ .debug_info    0x00000000000020ff     0x1530 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
+ .debug_info    0x000000000000362f      0x8b7 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
+ .debug_info    0x0000000000003ee6     0x2412 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
+ .debug_info    0x00000000000062f8     0x15d3 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
+ .debug_info    0x00000000000078cb     0x2657 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
+ .debug_info    0x0000000000009f22     0x2897 C:/devkitPro/libnds/lib\libfilesystem.a(nitrofs.o)
+ .debug_info    0x000000000000c7b9     0x204d C:/devkitPro/libnds/lib\libfat.a(libfat.o)
+ .debug_info    0x000000000000e806      0x260 C:/devkitPro/libnds/lib\libfat.a(disc.o)
+ .debug_info    0x000000000000ea66     0x3783 C:/devkitPro/libnds/lib\libfat.a(fatfile.o)
+ .debug_info    0x00000000000121e9     0x12da C:/devkitPro/libnds/lib\libfat.a(cache.o)
+ .debug_info    0x00000000000134c3     0x2833 C:/devkitPro/libnds/lib\libfat.a(fatdir.o)
+ .debug_info    0x0000000000015cf6     0x2fcb C:/devkitPro/libnds/lib\libfat.a(directory.o)
+ .debug_info    0x0000000000018cc1     0x2c74 C:/devkitPro/libnds/lib\libfat.a(partition.o)
+ .debug_info    0x000000000001b935      0x11d C:/devkitPro/libnds/lib\libfat.a(lock.o)
+ .debug_info    0x000000000001ba52      0x289 C:/devkitPro/libnds/lib\libfat.a(filetime.o)
+ .debug_info    0x000000000001bcdb      0xf1c C:/devkitPro/libnds/lib\libfat.a(file_allocation_table.o)
+ .debug_info    0x000000000001cbf7      0x7c5 C:/devkitPro/libnds/lib\libnds9.a(video.o)
+ .debug_info    0x000000000001d3bc     0x26d9 C:/devkitPro/libnds/lib\libnds9.a(console.o)
+ .debug_info    0x000000000001fa95      0xda6 C:/devkitPro/libnds/lib\libnds9.a(sprite.o)
+ .debug_info    0x000000000002083b      0x466 C:/devkitPro/libnds/lib\libnds9.a(keys.o)
+ .debug_info    0x0000000000020ca1      0xb36 C:/devkitPro/libnds/lib\libnds9.a(dldi.o)
+ .debug_info    0x00000000000217d7     0x12a5 C:/devkitPro/libnds/lib\libnds9.a(initSystem.o)
+ .debug_info    0x0000000000022a7c      0xa64 C:/devkitPro/libnds/lib\libnds9.a(timeSupport.o)
+ .debug_info    0x00000000000234e0       0x59 C:/devkitPro/libnds/lib\libnds9.a(securearea.o)
+ .debug_info    0x0000000000023539      0x68f C:/devkitPro/libnds/lib\libnds9.a(interrupts.o)
+ .debug_info    0x0000000000023bc8      0x378 C:/devkitPro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+ .debug_info    0x0000000000023f40      0x6b8 C:/devkitPro/libnds/lib\libnds9.a(card.o)
+ .debug_info    0x00000000000245f8     0x189c C:/devkitPro/libnds/lib\libnds9.a(fifosystem.o)
+ .debug_info    0x0000000000025e94       0x22 C:/devkitPro/libnds/lib\libnds9.a(dcache.o)
+ .debug_info    0x0000000000025eb6       0x26 C:/devkitPro/libnds/lib\libnds9.a(dldi_stub.o)
+ .debug_info    0x0000000000025edc       0x22 C:/devkitPro/libnds/lib\libnds9.a(mpu_setup.o)
+ .debug_info    0x0000000000025efe       0x22 C:/devkitPro/libnds/lib\libnds9.a(IntrWait.o)
+ .debug_info    0x0000000000025f20       0x26 C:/devkitPro/libnds/lib\libnds9.a(cpu_clock.o)
+ .debug_info    0x0000000000025f46       0x26 C:/devkitPro/libnds/lib\libnds9.a(interruptDispatcher.o)
+ .debug_info    0x0000000000025f6c       0x26 C:/devkitPro/libnds/lib\libnds9.a(swiSoftReset.o)
+ .debug_info    0x0000000000025f92       0x22 C:/devkitPro/libnds/lib\libnds9.a(biosCalls.o)
+ .debug_info    0x0000000000025fb4      0xacd C:/devkitPro/libnds/lib\libnds9.a(background.o)
+ .debug_info    0x0000000000026a81     0x1d8b C:/devkitPro/libnds/lib\libnds9.a(sprite_alloc.o)
+ .debug_info    0x000000000002880c      0xa85 C:/devkitPro/libnds/lib\libnds9.a(system.o)
+ .debug_info    0x0000000000029291      0x79b C:/devkitPro/libnds/lib\libnds9.a(trig.o)
+ .debug_info    0x0000000000029a2c      0xb07 C:/devkitPro/libnds/lib\libnds9.a(sd.twl.o)
 
 .debug_abbrev   0x0000000000000000     0x6c39
  *(.debug_abbrev)
@@ -3912,227 +3912,227 @@ ARM.exidx
  .debug_abbrev  0x000000000000672f      0x224 C:/devkitPro/libnds/lib\libnds9.a(trig.o)
  .debug_abbrev  0x0000000000006953      0x2e6 C:/devkitPro/libnds/lib\libnds9.a(sd.twl.o)
 
-.debug_line     0x0000000000000000    0x1472a
+.debug_line     0x0000000000000000    0x1470e
  *(.debug_line)
  .debug_line    0x0000000000000000       0xa9 collision.o
- .debug_line    0x00000000000000a9      0x31c game.o
- .debug_line    0x00000000000003c5      0x1f4 init.o
- .debug_line    0x00000000000005b9      0x199 main.o
- .debug_line    0x0000000000000752      0x1c6 move.o
- .debug_line    0x0000000000000918      0x1f0 titleScreen.o
- .debug_line    0x0000000000000b08      0x34b C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
- .debug_line    0x0000000000000e53      0x2c5 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
- .debug_line    0x0000000000001118      0x92f C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
- .debug_line    0x0000000000001a47      0x64c C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
- .debug_line    0x0000000000002093      0xacd C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
- .debug_line    0x0000000000002b60     0x101a C:/devkitPro/libnds/lib\libfilesystem.a(nitrofs.o)
- .debug_line    0x0000000000003b7a      0x784 C:/devkitPro/libnds/lib\libfat.a(libfat.o)
- .debug_line    0x00000000000042fe      0x141 C:/devkitPro/libnds/lib\libfat.a(disc.o)
- .debug_line    0x000000000000443f     0x2050 C:/devkitPro/libnds/lib\libfat.a(fatfile.o)
- .debug_line    0x000000000000648f      0xb85 C:/devkitPro/libnds/lib\libfat.a(cache.o)
- .debug_line    0x0000000000007014     0x1043 C:/devkitPro/libnds/lib\libfat.a(fatdir.o)
- .debug_line    0x0000000000008057     0x2028 C:/devkitPro/libnds/lib\libfat.a(directory.o)
- .debug_line    0x000000000000a07f      0xec2 C:/devkitPro/libnds/lib\libfat.a(partition.o)
- .debug_line    0x000000000000af41       0x87 C:/devkitPro/libnds/lib\libfat.a(lock.o)
- .debug_line    0x000000000000afc8      0x276 C:/devkitPro/libnds/lib\libfat.a(filetime.o)
- .debug_line    0x000000000000b23e      0x895 C:/devkitPro/libnds/lib\libfat.a(file_allocation_table.o)
- .debug_line    0x000000000000bad3      0x4d9 C:/devkitPro/libnds/lib\libnds9.a(video.o)
- .debug_line    0x000000000000bfac     0x146c C:/devkitPro/libnds/lib\libnds9.a(console.o)
- .debug_line    0x000000000000d418      0x797 C:/devkitPro/libnds/lib\libnds9.a(sprite.o)
- .debug_line    0x000000000000dbaf      0x3ad C:/devkitPro/libnds/lib\libnds9.a(keys.o)
- .debug_line    0x000000000000df5c      0x749 C:/devkitPro/libnds/lib\libnds9.a(dldi.o)
- .debug_line    0x000000000000e6a5      0x58b C:/devkitPro/libnds/lib\libnds9.a(initSystem.o)
- .debug_line    0x000000000000ec30      0x1f0 C:/devkitPro/libnds/lib\libnds9.a(timeSupport.o)
- .debug_line    0x000000000000ee20       0x8f C:/devkitPro/libnds/lib\libnds9.a(securearea.o)
- .debug_line    0x000000000000eeaf      0x569 C:/devkitPro/libnds/lib\libnds9.a(interrupts.o)
- .debug_line    0x000000000000f418      0x252 C:/devkitPro/libnds/lib\libnds9.a(libnds_exit.arm.o)
- .debug_line    0x000000000000f66a      0x6c1 C:/devkitPro/libnds/lib\libnds9.a(card.o)
- .debug_line    0x000000000000fd2b     0x142b C:/devkitPro/libnds/lib\libnds9.a(fifosystem.o)
- .debug_line    0x0000000000011156       0xe0 C:/devkitPro/libnds/lib\libnds9.a(dcache.o)
- .debug_line    0x0000000000011236       0x9e C:/devkitPro/libnds/lib\libnds9.a(dldi_stub.o)
- .debug_line    0x00000000000112d4      0x13c C:/devkitPro/libnds/lib\libnds9.a(mpu_setup.o)
- .debug_line    0x0000000000011410       0xc7 C:/devkitPro/libnds/lib\libnds9.a(IntrWait.o)
- .debug_line    0x00000000000114d7       0xb0 C:/devkitPro/libnds/lib\libnds9.a(cpu_clock.o)
- .debug_line    0x0000000000011587       0xd9 C:/devkitPro/libnds/lib\libnds9.a(interruptDispatcher.o)
- .debug_line    0x0000000000011660       0xa9 C:/devkitPro/libnds/lib\libnds9.a(swiSoftReset.o)
- .debug_line    0x0000000000011709      0x1ff C:/devkitPro/libnds/lib\libnds9.a(biosCalls.o)
- .debug_line    0x0000000000011908      0x6a4 C:/devkitPro/libnds/lib\libnds9.a(background.o)
- .debug_line    0x0000000000011fac     0x16fc C:/devkitPro/libnds/lib\libnds9.a(sprite_alloc.o)
- .debug_line    0x00000000000136a8      0x4e1 C:/devkitPro/libnds/lib\libnds9.a(system.o)
- .debug_line    0x0000000000013b89      0x77d C:/devkitPro/libnds/lib\libnds9.a(trig.o)
- .debug_line    0x0000000000014306      0x424 C:/devkitPro/libnds/lib\libnds9.a(sd.twl.o)
+ .debug_line    0x00000000000000a9      0x300 game.o
+ .debug_line    0x00000000000003a9      0x1f4 init.o
+ .debug_line    0x000000000000059d      0x199 main.o
+ .debug_line    0x0000000000000736      0x1c6 move.o
+ .debug_line    0x00000000000008fc      0x1f0 titleScreen.o
+ .debug_line    0x0000000000000aec      0x34b C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
+ .debug_line    0x0000000000000e37      0x2c5 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
+ .debug_line    0x00000000000010fc      0x92f C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
+ .debug_line    0x0000000000001a2b      0x64c C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
+ .debug_line    0x0000000000002077      0xacd C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
+ .debug_line    0x0000000000002b44     0x101a C:/devkitPro/libnds/lib\libfilesystem.a(nitrofs.o)
+ .debug_line    0x0000000000003b5e      0x784 C:/devkitPro/libnds/lib\libfat.a(libfat.o)
+ .debug_line    0x00000000000042e2      0x141 C:/devkitPro/libnds/lib\libfat.a(disc.o)
+ .debug_line    0x0000000000004423     0x2050 C:/devkitPro/libnds/lib\libfat.a(fatfile.o)
+ .debug_line    0x0000000000006473      0xb85 C:/devkitPro/libnds/lib\libfat.a(cache.o)
+ .debug_line    0x0000000000006ff8     0x1043 C:/devkitPro/libnds/lib\libfat.a(fatdir.o)
+ .debug_line    0x000000000000803b     0x2028 C:/devkitPro/libnds/lib\libfat.a(directory.o)
+ .debug_line    0x000000000000a063      0xec2 C:/devkitPro/libnds/lib\libfat.a(partition.o)
+ .debug_line    0x000000000000af25       0x87 C:/devkitPro/libnds/lib\libfat.a(lock.o)
+ .debug_line    0x000000000000afac      0x276 C:/devkitPro/libnds/lib\libfat.a(filetime.o)
+ .debug_line    0x000000000000b222      0x895 C:/devkitPro/libnds/lib\libfat.a(file_allocation_table.o)
+ .debug_line    0x000000000000bab7      0x4d9 C:/devkitPro/libnds/lib\libnds9.a(video.o)
+ .debug_line    0x000000000000bf90     0x146c C:/devkitPro/libnds/lib\libnds9.a(console.o)
+ .debug_line    0x000000000000d3fc      0x797 C:/devkitPro/libnds/lib\libnds9.a(sprite.o)
+ .debug_line    0x000000000000db93      0x3ad C:/devkitPro/libnds/lib\libnds9.a(keys.o)
+ .debug_line    0x000000000000df40      0x749 C:/devkitPro/libnds/lib\libnds9.a(dldi.o)
+ .debug_line    0x000000000000e689      0x58b C:/devkitPro/libnds/lib\libnds9.a(initSystem.o)
+ .debug_line    0x000000000000ec14      0x1f0 C:/devkitPro/libnds/lib\libnds9.a(timeSupport.o)
+ .debug_line    0x000000000000ee04       0x8f C:/devkitPro/libnds/lib\libnds9.a(securearea.o)
+ .debug_line    0x000000000000ee93      0x569 C:/devkitPro/libnds/lib\libnds9.a(interrupts.o)
+ .debug_line    0x000000000000f3fc      0x252 C:/devkitPro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+ .debug_line    0x000000000000f64e      0x6c1 C:/devkitPro/libnds/lib\libnds9.a(card.o)
+ .debug_line    0x000000000000fd0f     0x142b C:/devkitPro/libnds/lib\libnds9.a(fifosystem.o)
+ .debug_line    0x000000000001113a       0xe0 C:/devkitPro/libnds/lib\libnds9.a(dcache.o)
+ .debug_line    0x000000000001121a       0x9e C:/devkitPro/libnds/lib\libnds9.a(dldi_stub.o)
+ .debug_line    0x00000000000112b8      0x13c C:/devkitPro/libnds/lib\libnds9.a(mpu_setup.o)
+ .debug_line    0x00000000000113f4       0xc7 C:/devkitPro/libnds/lib\libnds9.a(IntrWait.o)
+ .debug_line    0x00000000000114bb       0xb0 C:/devkitPro/libnds/lib\libnds9.a(cpu_clock.o)
+ .debug_line    0x000000000001156b       0xd9 C:/devkitPro/libnds/lib\libnds9.a(interruptDispatcher.o)
+ .debug_line    0x0000000000011644       0xa9 C:/devkitPro/libnds/lib\libnds9.a(swiSoftReset.o)
+ .debug_line    0x00000000000116ed      0x1ff C:/devkitPro/libnds/lib\libnds9.a(biosCalls.o)
+ .debug_line    0x00000000000118ec      0x6a4 C:/devkitPro/libnds/lib\libnds9.a(background.o)
+ .debug_line    0x0000000000011f90     0x16fc C:/devkitPro/libnds/lib\libnds9.a(sprite_alloc.o)
+ .debug_line    0x000000000001368c      0x4e1 C:/devkitPro/libnds/lib\libnds9.a(system.o)
+ .debug_line    0x0000000000013b6d      0x77d C:/devkitPro/libnds/lib\libnds9.a(trig.o)
+ .debug_line    0x00000000000142ea      0x424 C:/devkitPro/libnds/lib\libnds9.a(sd.twl.o)
 
-.debug_frame    0x0000000000000000     0x25f4
+.debug_frame    0x0000000000000000     0x25f0
  *(.debug_frame)
  .debug_frame   0x0000000000000000       0x2c collision.o
- .debug_frame   0x000000000000002c       0x3c game.o
- .debug_frame   0x0000000000000068       0x28 init.o
- .debug_frame   0x0000000000000090       0x28 main.o
- .debug_frame   0x00000000000000b8       0x20 move.o
- .debug_frame   0x00000000000000d8       0x2c titleScreen.o
- .debug_frame   0x0000000000000104      0x198 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
- .debug_frame   0x000000000000029c       0x78 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
- .debug_frame   0x0000000000000314      0x2cc C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
- .debug_frame   0x00000000000005e0      0x16c C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
- .debug_frame   0x000000000000074c      0x3b0 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
- .debug_frame   0x0000000000000afc      0x1c8 C:/devkitPro/libnds/lib\libfilesystem.a(nitrofs.o)
- .debug_frame   0x0000000000000cc4      0x100 C:/devkitPro/libnds/lib\libfat.a(libfat.o)
- .debug_frame   0x0000000000000dc4      0x234 C:/devkitPro/libnds/lib\libfat.a(fatfile.o)
- .debug_frame   0x0000000000000ff8      0x1bc C:/devkitPro/libnds/lib\libfat.a(cache.o)
- .debug_frame   0x00000000000011b4      0x17c C:/devkitPro/libnds/lib\libfat.a(fatdir.o)
- .debug_frame   0x0000000000001330      0x260 C:/devkitPro/libnds/lib\libfat.a(directory.o)
- .debug_frame   0x0000000000001590      0x1cc C:/devkitPro/libnds/lib\libfat.a(partition.o)
- .debug_frame   0x000000000000175c       0x50 C:/devkitPro/libnds/lib\libfat.a(lock.o)
- .debug_frame   0x00000000000017ac       0x58 C:/devkitPro/libnds/lib\libfat.a(filetime.o)
- .debug_frame   0x0000000000001804      0x120 C:/devkitPro/libnds/lib\libfat.a(file_allocation_table.o)
- .debug_frame   0x0000000000001924       0xbc C:/devkitPro/libnds/lib\libnds9.a(video.o)
- .debug_frame   0x00000000000019e0      0x180 C:/devkitPro/libnds/lib\libnds9.a(console.o)
- .debug_frame   0x0000000000001b60       0xf0 C:/devkitPro/libnds/lib\libnds9.a(sprite.o)
- .debug_frame   0x0000000000001c50       0x8c C:/devkitPro/libnds/lib\libnds9.a(keys.o)
- .debug_frame   0x0000000000001cdc       0xa0 C:/devkitPro/libnds/lib\libnds9.a(dldi.o)
- .debug_frame   0x0000000000001d7c       0x28 C:/devkitPro/libnds/lib\libnds9.a(initSystem.o)
- .debug_frame   0x0000000000001da4       0x28 C:/devkitPro/libnds/lib\libnds9.a(timeSupport.o)
- .debug_frame   0x0000000000001dcc       0xa4 C:/devkitPro/libnds/lib\libnds9.a(interrupts.o)
- .debug_frame   0x0000000000001e70       0x38 C:/devkitPro/libnds/lib\libnds9.a(libnds_exit.arm.o)
- .debug_frame   0x0000000000001ea8       0xf8 C:/devkitPro/libnds/lib\libnds9.a(card.o)
- .debug_frame   0x0000000000001fa0      0x290 C:/devkitPro/libnds/lib\libnds9.a(fifosystem.o)
- .debug_frame   0x0000000000002230       0xb8 C:/devkitPro/libnds/lib\libnds9.a(background.o)
- .debug_frame   0x00000000000022e8       0x9c C:/devkitPro/libnds/lib\libnds9.a(sprite_alloc.o)
- .debug_frame   0x0000000000002384       0xf8 C:/devkitPro/libnds/lib\libnds9.a(system.o)
- .debug_frame   0x000000000000247c       0xd8 C:/devkitPro/libnds/lib\libnds9.a(trig.o)
- .debug_frame   0x0000000000002554       0xa0 C:/devkitPro/libnds/lib\libnds9.a(sd.twl.o)
+ .debug_frame   0x000000000000002c       0x38 game.o
+ .debug_frame   0x0000000000000064       0x28 init.o
+ .debug_frame   0x000000000000008c       0x28 main.o
+ .debug_frame   0x00000000000000b4       0x20 move.o
+ .debug_frame   0x00000000000000d4       0x2c titleScreen.o
+ .debug_frame   0x0000000000000100      0x198 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
+ .debug_frame   0x0000000000000298       0x78 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
+ .debug_frame   0x0000000000000310      0x2cc C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
+ .debug_frame   0x00000000000005dc      0x16c C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
+ .debug_frame   0x0000000000000748      0x3b0 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
+ .debug_frame   0x0000000000000af8      0x1c8 C:/devkitPro/libnds/lib\libfilesystem.a(nitrofs.o)
+ .debug_frame   0x0000000000000cc0      0x100 C:/devkitPro/libnds/lib\libfat.a(libfat.o)
+ .debug_frame   0x0000000000000dc0      0x234 C:/devkitPro/libnds/lib\libfat.a(fatfile.o)
+ .debug_frame   0x0000000000000ff4      0x1bc C:/devkitPro/libnds/lib\libfat.a(cache.o)
+ .debug_frame   0x00000000000011b0      0x17c C:/devkitPro/libnds/lib\libfat.a(fatdir.o)
+ .debug_frame   0x000000000000132c      0x260 C:/devkitPro/libnds/lib\libfat.a(directory.o)
+ .debug_frame   0x000000000000158c      0x1cc C:/devkitPro/libnds/lib\libfat.a(partition.o)
+ .debug_frame   0x0000000000001758       0x50 C:/devkitPro/libnds/lib\libfat.a(lock.o)
+ .debug_frame   0x00000000000017a8       0x58 C:/devkitPro/libnds/lib\libfat.a(filetime.o)
+ .debug_frame   0x0000000000001800      0x120 C:/devkitPro/libnds/lib\libfat.a(file_allocation_table.o)
+ .debug_frame   0x0000000000001920       0xbc C:/devkitPro/libnds/lib\libnds9.a(video.o)
+ .debug_frame   0x00000000000019dc      0x180 C:/devkitPro/libnds/lib\libnds9.a(console.o)
+ .debug_frame   0x0000000000001b5c       0xf0 C:/devkitPro/libnds/lib\libnds9.a(sprite.o)
+ .debug_frame   0x0000000000001c4c       0x8c C:/devkitPro/libnds/lib\libnds9.a(keys.o)
+ .debug_frame   0x0000000000001cd8       0xa0 C:/devkitPro/libnds/lib\libnds9.a(dldi.o)
+ .debug_frame   0x0000000000001d78       0x28 C:/devkitPro/libnds/lib\libnds9.a(initSystem.o)
+ .debug_frame   0x0000000000001da0       0x28 C:/devkitPro/libnds/lib\libnds9.a(timeSupport.o)
+ .debug_frame   0x0000000000001dc8       0xa4 C:/devkitPro/libnds/lib\libnds9.a(interrupts.o)
+ .debug_frame   0x0000000000001e6c       0x38 C:/devkitPro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+ .debug_frame   0x0000000000001ea4       0xf8 C:/devkitPro/libnds/lib\libnds9.a(card.o)
+ .debug_frame   0x0000000000001f9c      0x290 C:/devkitPro/libnds/lib\libnds9.a(fifosystem.o)
+ .debug_frame   0x000000000000222c       0xb8 C:/devkitPro/libnds/lib\libnds9.a(background.o)
+ .debug_frame   0x00000000000022e4       0x9c C:/devkitPro/libnds/lib\libnds9.a(sprite_alloc.o)
+ .debug_frame   0x0000000000002380       0xf8 C:/devkitPro/libnds/lib\libnds9.a(system.o)
+ .debug_frame   0x0000000000002478       0xd8 C:/devkitPro/libnds/lib\libnds9.a(trig.o)
+ .debug_frame   0x0000000000002550       0xa0 C:/devkitPro/libnds/lib\libnds9.a(sd.twl.o)
 
-.debug_str      0x0000000000000000     0x7120
+.debug_str      0x0000000000000000     0x711a
  *(.debug_str)
  .debug_str     0x0000000000000000      0x105 collision.o
- .debug_str     0x0000000000000105      0x73f game.o
-                                        0x87f (size before relaxing)
- .debug_str     0x0000000000000844       0xa8 init.o
+ .debug_str     0x0000000000000105      0x739 game.o
+                                        0x879 (size before relaxing)
+ .debug_str     0x000000000000083e       0xa8 init.o
                                         0x415 (size before relaxing)
- .debug_str     0x00000000000008ec       0x3d main.o
+ .debug_str     0x00000000000008e6       0x3d main.o
                                         0x3b4 (size before relaxing)
- .debug_str     0x0000000000000929       0xab move.o
+ .debug_str     0x0000000000000923       0xab move.o
                                         0x41d (size before relaxing)
- .debug_str     0x00000000000009d4       0x49 titleScreen.o
+ .debug_str     0x00000000000009ce       0x49 titleScreen.o
                                         0x46e (size before relaxing)
- .debug_str     0x0000000000000a1d      0x453 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
+ .debug_str     0x0000000000000a17      0x453 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
                                         0xad1 (size before relaxing)
- .debug_str     0x0000000000000e70       0xaa C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
+ .debug_str     0x0000000000000e6a       0xaa C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
                                         0x532 (size before relaxing)
- .debug_str     0x0000000000000f1a      0xbc8 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
+ .debug_str     0x0000000000000f14      0xbc8 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
                                        0x14f3 (size before relaxing)
- .debug_str     0x0000000000001ae2      0x1d6 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
+ .debug_str     0x0000000000001adc      0x1d6 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
                                         0xab2 (size before relaxing)
- .debug_str     0x0000000000001cb8      0x786 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
+ .debug_str     0x0000000000001cb2      0x786 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
                                        0x124b (size before relaxing)
- .debug_str     0x000000000000243e      0x89e C:/devkitPro/libnds/lib\libfilesystem.a(nitrofs.o)
+ .debug_str     0x0000000000002438      0x89e C:/devkitPro/libnds/lib\libfilesystem.a(nitrofs.o)
                                         0xed1 (size before relaxing)
- .debug_str     0x0000000000002cdc      0x55a C:/devkitPro/libnds/lib\libfat.a(libfat.o)
+ .debug_str     0x0000000000002cd6      0x55a C:/devkitPro/libnds/lib\libfat.a(libfat.o)
                                         0xf42 (size before relaxing)
- .debug_str     0x0000000000003236       0x4f C:/devkitPro/libnds/lib\libfat.a(disc.o)
+ .debug_str     0x0000000000003230       0x4f C:/devkitPro/libnds/lib\libfat.a(disc.o)
                                         0x313 (size before relaxing)
- .debug_str     0x0000000000003285      0x629 C:/devkitPro/libnds/lib\libfat.a(fatfile.o)
+ .debug_str     0x000000000000327f      0x629 C:/devkitPro/libnds/lib\libfat.a(fatfile.o)
                                        0x116f (size before relaxing)
- .debug_str     0x00000000000038ae      0x1a6 C:/devkitPro/libnds/lib\libfat.a(cache.o)
+ .debug_str     0x00000000000038a8      0x1a6 C:/devkitPro/libnds/lib\libfat.a(cache.o)
                                         0x650 (size before relaxing)
- .debug_str     0x0000000000003a54      0x27a C:/devkitPro/libnds/lib\libfat.a(fatdir.o)
+ .debug_str     0x0000000000003a4e      0x27a C:/devkitPro/libnds/lib\libfat.a(fatdir.o)
                                        0x10bd (size before relaxing)
- .debug_str     0x0000000000003cce      0x570 C:/devkitPro/libnds/lib\libfat.a(directory.o)
+ .debug_str     0x0000000000003cc8      0x570 C:/devkitPro/libnds/lib\libfat.a(directory.o)
                                         0xfe9 (size before relaxing)
- .debug_str     0x000000000000423e      0x4f7 C:/devkitPro/libnds/lib\libfat.a(partition.o)
+ .debug_str     0x0000000000004238      0x4f7 C:/devkitPro/libnds/lib\libfat.a(partition.o)
                                        0x13ae (size before relaxing)
- .debug_str     0x0000000000004735       0x55 C:/devkitPro/libnds/lib\libfat.a(lock.o)
+ .debug_str     0x000000000000472f       0x55 C:/devkitPro/libnds/lib\libfat.a(lock.o)
                                         0x216 (size before relaxing)
- .debug_str     0x000000000000478a       0x7a C:/devkitPro/libnds/lib\libfat.a(filetime.o)
+ .debug_str     0x0000000000004784       0x7a C:/devkitPro/libnds/lib\libfat.a(filetime.o)
                                         0x2c5 (size before relaxing)
- .debug_str     0x0000000000004804       0xc8 C:/devkitPro/libnds/lib\libfat.a(file_allocation_table.o)
+ .debug_str     0x00000000000047fe       0xc8 C:/devkitPro/libnds/lib\libfat.a(file_allocation_table.o)
                                         0x71f (size before relaxing)
- .debug_str     0x00000000000048cc      0x3e8 C:/devkitPro/libnds/lib\libnds9.a(video.o)
+ .debug_str     0x00000000000048c6      0x3e8 C:/devkitPro/libnds/lib\libnds9.a(video.o)
                                         0xc53 (size before relaxing)
- .debug_str     0x0000000000004cb4      0x623 C:/devkitPro/libnds/lib\libnds9.a(console.o)
+ .debug_str     0x0000000000004cae      0x623 C:/devkitPro/libnds/lib\libnds9.a(console.o)
                                        0x127d (size before relaxing)
- .debug_str     0x00000000000052d7      0x184 C:/devkitPro/libnds/lib\libnds9.a(sprite.o)
+ .debug_str     0x00000000000052d1      0x184 C:/devkitPro/libnds/lib\libnds9.a(sprite.o)
                                         0x870 (size before relaxing)
- .debug_str     0x000000000000545b      0x168 C:/devkitPro/libnds/lib\libnds9.a(keys.o)
+ .debug_str     0x0000000000005455      0x168 C:/devkitPro/libnds/lib\libnds9.a(keys.o)
                                         0x420 (size before relaxing)
- .debug_str     0x00000000000055c3      0x218 C:/devkitPro/libnds/lib\libnds9.a(dldi.o)
+ .debug_str     0x00000000000055bd      0x218 C:/devkitPro/libnds/lib\libnds9.a(dldi.o)
                                         0x77a (size before relaxing)
- .debug_str     0x00000000000057db      0x404 C:/devkitPro/libnds/lib\libnds9.a(initSystem.o)
+ .debug_str     0x00000000000057d5      0x404 C:/devkitPro/libnds/lib\libnds9.a(initSystem.o)
                                         0xc4b (size before relaxing)
- .debug_str     0x0000000000005bdf       0x7e C:/devkitPro/libnds/lib\libnds9.a(timeSupport.o)
+ .debug_str     0x0000000000005bd9       0x7e C:/devkitPro/libnds/lib\libnds9.a(timeSupport.o)
                                         0x689 (size before relaxing)
- .debug_str     0x0000000000005c5d       0x7f C:/devkitPro/libnds/lib\libnds9.a(securearea.o)
+ .debug_str     0x0000000000005c57       0x7f C:/devkitPro/libnds/lib\libnds9.a(securearea.o)
                                         0x16e (size before relaxing)
- .debug_str     0x0000000000005cdc      0x193 C:/devkitPro/libnds/lib\libnds9.a(interrupts.o)
+ .debug_str     0x0000000000005cd6      0x193 C:/devkitPro/libnds/lib\libnds9.a(interrupts.o)
                                         0x48d (size before relaxing)
- .debug_str     0x0000000000005e6f      0x1db C:/devkitPro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+ .debug_str     0x0000000000005e69      0x1db C:/devkitPro/libnds/lib\libnds9.a(libnds_exit.arm.o)
                                         0x3e5 (size before relaxing)
- .debug_str     0x000000000000604a       0xef C:/devkitPro/libnds/lib\libnds9.a(card.o)
+ .debug_str     0x0000000000006044       0xef C:/devkitPro/libnds/lib\libnds9.a(card.o)
                                         0x2f4 (size before relaxing)
- .debug_str     0x0000000000006139      0x47e C:/devkitPro/libnds/lib\libnds9.a(fifosystem.o)
+ .debug_str     0x0000000000006133      0x47e C:/devkitPro/libnds/lib\libnds9.a(fifosystem.o)
                                         0x894 (size before relaxing)
- .debug_str     0x00000000000065b7       0x70 C:/devkitPro/libnds/lib\libnds9.a(dcache.o)
+ .debug_str     0x00000000000065b1       0x70 C:/devkitPro/libnds/lib\libnds9.a(dcache.o)
                                          0xc4 (size before relaxing)
- .debug_str     0x0000000000006627       0x6c C:/devkitPro/libnds/lib\libnds9.a(dldi_stub.o)
+ .debug_str     0x0000000000006621       0x6c C:/devkitPro/libnds/lib\libnds9.a(dldi_stub.o)
                                          0xcc (size before relaxing)
- .debug_str     0x0000000000006693       0x6e C:/devkitPro/libnds/lib\libnds9.a(mpu_setup.o)
+ .debug_str     0x000000000000668d       0x6e C:/devkitPro/libnds/lib\libnds9.a(mpu_setup.o)
                                          0xce (size before relaxing)
- .debug_str     0x0000000000006701       0x6d C:/devkitPro/libnds/lib\libnds9.a(IntrWait.o)
+ .debug_str     0x00000000000066fb       0x6d C:/devkitPro/libnds/lib\libnds9.a(IntrWait.o)
                                          0xcd (size before relaxing)
- .debug_str     0x000000000000676e       0x6e C:/devkitPro/libnds/lib\libnds9.a(cpu_clock.o)
+ .debug_str     0x0000000000006768       0x6e C:/devkitPro/libnds/lib\libnds9.a(cpu_clock.o)
                                          0xce (size before relaxing)
- .debug_str     0x00000000000067dc       0x73 C:/devkitPro/libnds/lib\libnds9.a(interruptDispatcher.o)
+ .debug_str     0x00000000000067d6       0x73 C:/devkitPro/libnds/lib\libnds9.a(interruptDispatcher.o)
                                          0xd3 (size before relaxing)
- .debug_str     0x000000000000684f       0x6c C:/devkitPro/libnds/lib\libnds9.a(swiSoftReset.o)
+ .debug_str     0x0000000000006849       0x6c C:/devkitPro/libnds/lib\libnds9.a(swiSoftReset.o)
                                          0xcc (size before relaxing)
- .debug_str     0x00000000000068bb       0x69 C:/devkitPro/libnds/lib\libnds9.a(biosCalls.o)
+ .debug_str     0x00000000000068b5       0x69 C:/devkitPro/libnds/lib\libnds9.a(biosCalls.o)
                                          0xc9 (size before relaxing)
- .debug_str     0x0000000000006924      0x10f C:/devkitPro/libnds/lib\libnds9.a(background.o)
+ .debug_str     0x000000000000691e      0x10f C:/devkitPro/libnds/lib\libnds9.a(background.o)
                                         0x79b (size before relaxing)
- .debug_str     0x0000000000006a33      0x128 C:/devkitPro/libnds/lib\libnds9.a(sprite_alloc.o)
+ .debug_str     0x0000000000006a2d      0x128 C:/devkitPro/libnds/lib\libnds9.a(sprite_alloc.o)
                                         0x7d7 (size before relaxing)
- .debug_str     0x0000000000006b5b      0x37a C:/devkitPro/libnds/lib\libnds9.a(system.o)
+ .debug_str     0x0000000000006b55      0x37a C:/devkitPro/libnds/lib\libnds9.a(system.o)
                                         0x791 (size before relaxing)
- .debug_str     0x0000000000006ed5      0x102 C:/devkitPro/libnds/lib\libnds9.a(trig.o)
+ .debug_str     0x0000000000006ecf      0x102 C:/devkitPro/libnds/lib\libnds9.a(trig.o)
                                         0x2e7 (size before relaxing)
- .debug_str     0x0000000000006fd7      0x149 C:/devkitPro/libnds/lib\libnds9.a(sd.twl.o)
+ .debug_str     0x0000000000006fd1      0x149 C:/devkitPro/libnds/lib\libnds9.a(sd.twl.o)
                                         0x81a (size before relaxing)
 
-.debug_loc      0x0000000000000000    0x19cb1
+.debug_loc      0x0000000000000000    0x19c61
  *(.debug_loc)
  .debug_loc     0x0000000000000000       0x7c collision.o
- .debug_loc     0x000000000000007c      0x15e game.o
- .debug_loc     0x00000000000001da       0x15 titleScreen.o
- .debug_loc     0x00000000000001ef      0xaa3 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
- .debug_loc     0x0000000000000c92      0x2a9 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
- .debug_loc     0x0000000000000f3b      0xe9b C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
- .debug_loc     0x0000000000001dd6      0x893 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
- .debug_loc     0x0000000000002669     0x224a C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
- .debug_loc     0x00000000000048b3     0x1783 C:/devkitPro/libnds/lib\libfilesystem.a(nitrofs.o)
- .debug_loc     0x0000000000006036      0x705 C:/devkitPro/libnds/lib\libfat.a(libfat.o)
- .debug_loc     0x000000000000673b     0x3adb C:/devkitPro/libnds/lib\libfat.a(fatfile.o)
- .debug_loc     0x000000000000a216     0x16d7 C:/devkitPro/libnds/lib\libfat.a(cache.o)
- .debug_loc     0x000000000000b8ed     0x1008 C:/devkitPro/libnds/lib\libfat.a(fatdir.o)
- .debug_loc     0x000000000000c8f5     0x3b6f C:/devkitPro/libnds/lib\libfat.a(directory.o)
- .debug_loc     0x0000000000010464     0x132a C:/devkitPro/libnds/lib\libfat.a(partition.o)
- .debug_loc     0x000000000001178e       0x4a C:/devkitPro/libnds/lib\libfat.a(filetime.o)
- .debug_loc     0x00000000000117d8      0xd9e C:/devkitPro/libnds/lib\libfat.a(file_allocation_table.o)
- .debug_loc     0x0000000000012576      0x2e5 C:/devkitPro/libnds/lib\libnds9.a(video.o)
- .debug_loc     0x000000000001285b     0x159b C:/devkitPro/libnds/lib\libnds9.a(console.o)
- .debug_loc     0x0000000000013df6      0x826 C:/devkitPro/libnds/lib\libnds9.a(sprite.o)
- .debug_loc     0x000000000001461c       0x15 C:/devkitPro/libnds/lib\libnds9.a(keys.o)
- .debug_loc     0x0000000000014631      0x3b7 C:/devkitPro/libnds/lib\libnds9.a(dldi.o)
- .debug_loc     0x00000000000149e8       0xf0 C:/devkitPro/libnds/lib\libnds9.a(initSystem.o)
- .debug_loc     0x0000000000014ad8       0x25 C:/devkitPro/libnds/lib\libnds9.a(timeSupport.o)
- .debug_loc     0x0000000000014afd      0x26c C:/devkitPro/libnds/lib\libnds9.a(interrupts.o)
- .debug_loc     0x0000000000014d69       0x64 C:/devkitPro/libnds/lib\libnds9.a(libnds_exit.arm.o)
- .debug_loc     0x0000000000014dcd      0x793 C:/devkitPro/libnds/lib\libnds9.a(card.o)
- .debug_loc     0x0000000000015560     0x168e C:/devkitPro/libnds/lib\libnds9.a(fifosystem.o)
- .debug_loc     0x0000000000016bee      0x427 C:/devkitPro/libnds/lib\libnds9.a(background.o)
- .debug_loc     0x0000000000017015     0x1c9e C:/devkitPro/libnds/lib\libnds9.a(sprite_alloc.o)
- .debug_loc     0x0000000000018cb3      0x202 C:/devkitPro/libnds/lib\libnds9.a(system.o)
- .debug_loc     0x0000000000018eb5      0xbe6 C:/devkitPro/libnds/lib\libnds9.a(trig.o)
- .debug_loc     0x0000000000019a9b      0x216 C:/devkitPro/libnds/lib\libnds9.a(sd.twl.o)
+ .debug_loc     0x000000000000007c      0x10e game.o
+ .debug_loc     0x000000000000018a       0x15 titleScreen.o
+ .debug_loc     0x000000000000019f      0xaa3 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
+ .debug_loc     0x0000000000000c42      0x2a9 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
+ .debug_loc     0x0000000000000eeb      0xe9b C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
+ .debug_loc     0x0000000000001d86      0x893 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
+ .debug_loc     0x0000000000002619     0x224a C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
+ .debug_loc     0x0000000000004863     0x1783 C:/devkitPro/libnds/lib\libfilesystem.a(nitrofs.o)
+ .debug_loc     0x0000000000005fe6      0x705 C:/devkitPro/libnds/lib\libfat.a(libfat.o)
+ .debug_loc     0x00000000000066eb     0x3adb C:/devkitPro/libnds/lib\libfat.a(fatfile.o)
+ .debug_loc     0x000000000000a1c6     0x16d7 C:/devkitPro/libnds/lib\libfat.a(cache.o)
+ .debug_loc     0x000000000000b89d     0x1008 C:/devkitPro/libnds/lib\libfat.a(fatdir.o)
+ .debug_loc     0x000000000000c8a5     0x3b6f C:/devkitPro/libnds/lib\libfat.a(directory.o)
+ .debug_loc     0x0000000000010414     0x132a C:/devkitPro/libnds/lib\libfat.a(partition.o)
+ .debug_loc     0x000000000001173e       0x4a C:/devkitPro/libnds/lib\libfat.a(filetime.o)
+ .debug_loc     0x0000000000011788      0xd9e C:/devkitPro/libnds/lib\libfat.a(file_allocation_table.o)
+ .debug_loc     0x0000000000012526      0x2e5 C:/devkitPro/libnds/lib\libnds9.a(video.o)
+ .debug_loc     0x000000000001280b     0x159b C:/devkitPro/libnds/lib\libnds9.a(console.o)
+ .debug_loc     0x0000000000013da6      0x826 C:/devkitPro/libnds/lib\libnds9.a(sprite.o)
+ .debug_loc     0x00000000000145cc       0x15 C:/devkitPro/libnds/lib\libnds9.a(keys.o)
+ .debug_loc     0x00000000000145e1      0x3b7 C:/devkitPro/libnds/lib\libnds9.a(dldi.o)
+ .debug_loc     0x0000000000014998       0xf0 C:/devkitPro/libnds/lib\libnds9.a(initSystem.o)
+ .debug_loc     0x0000000000014a88       0x25 C:/devkitPro/libnds/lib\libnds9.a(timeSupport.o)
+ .debug_loc     0x0000000000014aad      0x26c C:/devkitPro/libnds/lib\libnds9.a(interrupts.o)
+ .debug_loc     0x0000000000014d19       0x64 C:/devkitPro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+ .debug_loc     0x0000000000014d7d      0x793 C:/devkitPro/libnds/lib\libnds9.a(card.o)
+ .debug_loc     0x0000000000015510     0x168e C:/devkitPro/libnds/lib\libnds9.a(fifosystem.o)
+ .debug_loc     0x0000000000016b9e      0x427 C:/devkitPro/libnds/lib\libnds9.a(background.o)
+ .debug_loc     0x0000000000016fc5     0x1c9e C:/devkitPro/libnds/lib\libnds9.a(sprite_alloc.o)
+ .debug_loc     0x0000000000018c63      0x202 C:/devkitPro/libnds/lib\libnds9.a(system.o)
+ .debug_loc     0x0000000000018e65      0xbe6 C:/devkitPro/libnds/lib\libnds9.a(trig.o)
+ .debug_loc     0x0000000000019a4b      0x216 C:/devkitPro/libnds/lib\libnds9.a(sd.twl.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -4176,42 +4176,42 @@ LOAD c:/devkitpro/devkitarm/bin/../lib/gcc/arm-none-eabi/10.2.0/thumb/crtn.o
 OUTPUT(C:/Users/juanr/Desktop/AeroGuyRedo/AeroGuyRedo.elf elf32-littlearm)
 LOAD linker stubs
 
-.debug_ranges   0x0000000000000000     0x3148
- .debug_ranges  0x0000000000000000       0x28 game.o
- .debug_ranges  0x0000000000000028       0x10 main.o
- .debug_ranges  0x0000000000000038       0x20 titleScreen.o
- .debug_ranges  0x0000000000000058       0x20 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
- .debug_ranges  0x0000000000000078       0x30 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
- .debug_ranges  0x00000000000000a8       0x90 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
- .debug_ranges  0x0000000000000138       0x30 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
- .debug_ranges  0x0000000000000168       0xa8 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
- .debug_ranges  0x0000000000000210      0x258 C:/devkitPro/libnds/lib\libfilesystem.a(nitrofs.o)
- .debug_ranges  0x0000000000000468       0xc0 C:/devkitPro/libnds/lib\libfat.a(libfat.o)
- .debug_ranges  0x0000000000000528      0x408 C:/devkitPro/libnds/lib\libfat.a(fatfile.o)
- .debug_ranges  0x0000000000000930       0xc0 C:/devkitPro/libnds/lib\libfat.a(cache.o)
- .debug_ranges  0x00000000000009f0      0x238 C:/devkitPro/libnds/lib\libfat.a(fatdir.o)
- .debug_ranges  0x0000000000000c28      0x488 C:/devkitPro/libnds/lib\libfat.a(directory.o)
- .debug_ranges  0x00000000000010b0      0x2b8 C:/devkitPro/libnds/lib\libfat.a(partition.o)
- .debug_ranges  0x0000000000001368       0x10 C:/devkitPro/libnds/lib\libfat.a(lock.o)
- .debug_ranges  0x0000000000001378       0x20 C:/devkitPro/libnds/lib\libfat.a(filetime.o)
- .debug_ranges  0x0000000000001398       0xa8 C:/devkitPro/libnds/lib\libfat.a(file_allocation_table.o)
- .debug_ranges  0x0000000000001440       0x50 C:/devkitPro/libnds/lib\libnds9.a(video.o)
- .debug_ranges  0x0000000000001490      0x368 C:/devkitPro/libnds/lib\libnds9.a(console.o)
- .debug_ranges  0x00000000000017f8       0xa8 C:/devkitPro/libnds/lib\libnds9.a(sprite.o)
- .debug_ranges  0x00000000000018a0       0x58 C:/devkitPro/libnds/lib\libnds9.a(keys.o)
- .debug_ranges  0x00000000000018f8       0x38 C:/devkitPro/libnds/lib\libnds9.a(dldi.o)
- .debug_ranges  0x0000000000001930       0x10 C:/devkitPro/libnds/lib\libnds9.a(initSystem.o)
- .debug_ranges  0x0000000000001940       0x10 C:/devkitPro/libnds/lib\libnds9.a(timeSupport.o)
- .debug_ranges  0x0000000000001950      0x100 C:/devkitPro/libnds/lib\libnds9.a(interrupts.o)
- .debug_ranges  0x0000000000001a50       0x18 C:/devkitPro/libnds/lib\libnds9.a(libnds_exit.arm.o)
- .debug_ranges  0x0000000000001a68       0xb0 C:/devkitPro/libnds/lib\libnds9.a(card.o)
- .debug_ranges  0x0000000000001b18      0x4c8 C:/devkitPro/libnds/lib\libnds9.a(fifosystem.o)
- .debug_ranges  0x0000000000001fe0       0x30 C:/devkitPro/libnds/lib\libnds9.a(dcache.o)
- .debug_ranges  0x0000000000002010       0x28 C:/devkitPro/libnds/lib\libnds9.a(mpu_setup.o)
- .debug_ranges  0x0000000000002038       0x20 C:/devkitPro/libnds/lib\libnds9.a(IntrWait.o)
- .debug_ranges  0x0000000000002058       0xc0 C:/devkitPro/libnds/lib\libnds9.a(biosCalls.o)
- .debug_ranges  0x0000000000002118       0xd8 C:/devkitPro/libnds/lib\libnds9.a(background.o)
- .debug_ranges  0x00000000000021f0      0xde0 C:/devkitPro/libnds/lib\libnds9.a(sprite_alloc.o)
- .debug_ranges  0x0000000000002fd0       0x58 C:/devkitPro/libnds/lib\libnds9.a(system.o)
- .debug_ranges  0x0000000000003028       0xf0 C:/devkitPro/libnds/lib\libnds9.a(trig.o)
- .debug_ranges  0x0000000000003118       0x30 C:/devkitPro/libnds/lib\libnds9.a(sd.twl.o)
+.debug_ranges   0x0000000000000000     0x3140
+ .debug_ranges  0x0000000000000000       0x20 game.o
+ .debug_ranges  0x0000000000000020       0x10 main.o
+ .debug_ranges  0x0000000000000030       0x20 titleScreen.o
+ .debug_ranges  0x0000000000000050       0x20 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_2d.o)
+ .debug_ranges  0x0000000000000070       0x30 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_basic.o)
+ .debug_ranges  0x00000000000000a0       0x90 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_sprite256.o)
+ .debug_ranges  0x0000000000000130       0x30 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_text.o)
+ .debug_ranges  0x0000000000000160       0xa8 C:/Users/juanr/Desktop/AeroGuyRedo/nflib/lib\libnflib.a(nf_tiledbg.o)
+ .debug_ranges  0x0000000000000208      0x258 C:/devkitPro/libnds/lib\libfilesystem.a(nitrofs.o)
+ .debug_ranges  0x0000000000000460       0xc0 C:/devkitPro/libnds/lib\libfat.a(libfat.o)
+ .debug_ranges  0x0000000000000520      0x408 C:/devkitPro/libnds/lib\libfat.a(fatfile.o)
+ .debug_ranges  0x0000000000000928       0xc0 C:/devkitPro/libnds/lib\libfat.a(cache.o)
+ .debug_ranges  0x00000000000009e8      0x238 C:/devkitPro/libnds/lib\libfat.a(fatdir.o)
+ .debug_ranges  0x0000000000000c20      0x488 C:/devkitPro/libnds/lib\libfat.a(directory.o)
+ .debug_ranges  0x00000000000010a8      0x2b8 C:/devkitPro/libnds/lib\libfat.a(partition.o)
+ .debug_ranges  0x0000000000001360       0x10 C:/devkitPro/libnds/lib\libfat.a(lock.o)
+ .debug_ranges  0x0000000000001370       0x20 C:/devkitPro/libnds/lib\libfat.a(filetime.o)
+ .debug_ranges  0x0000000000001390       0xa8 C:/devkitPro/libnds/lib\libfat.a(file_allocation_table.o)
+ .debug_ranges  0x0000000000001438       0x50 C:/devkitPro/libnds/lib\libnds9.a(video.o)
+ .debug_ranges  0x0000000000001488      0x368 C:/devkitPro/libnds/lib\libnds9.a(console.o)
+ .debug_ranges  0x00000000000017f0       0xa8 C:/devkitPro/libnds/lib\libnds9.a(sprite.o)
+ .debug_ranges  0x0000000000001898       0x58 C:/devkitPro/libnds/lib\libnds9.a(keys.o)
+ .debug_ranges  0x00000000000018f0       0x38 C:/devkitPro/libnds/lib\libnds9.a(dldi.o)
+ .debug_ranges  0x0000000000001928       0x10 C:/devkitPro/libnds/lib\libnds9.a(initSystem.o)
+ .debug_ranges  0x0000000000001938       0x10 C:/devkitPro/libnds/lib\libnds9.a(timeSupport.o)
+ .debug_ranges  0x0000000000001948      0x100 C:/devkitPro/libnds/lib\libnds9.a(interrupts.o)
+ .debug_ranges  0x0000000000001a48       0x18 C:/devkitPro/libnds/lib\libnds9.a(libnds_exit.arm.o)
+ .debug_ranges  0x0000000000001a60       0xb0 C:/devkitPro/libnds/lib\libnds9.a(card.o)
+ .debug_ranges  0x0000000000001b10      0x4c8 C:/devkitPro/libnds/lib\libnds9.a(fifosystem.o)
+ .debug_ranges  0x0000000000001fd8       0x30 C:/devkitPro/libnds/lib\libnds9.a(dcache.o)
+ .debug_ranges  0x0000000000002008       0x28 C:/devkitPro/libnds/lib\libnds9.a(mpu_setup.o)
+ .debug_ranges  0x0000000000002030       0x20 C:/devkitPro/libnds/lib\libnds9.a(IntrWait.o)
+ .debug_ranges  0x0000000000002050       0xc0 C:/devkitPro/libnds/lib\libnds9.a(biosCalls.o)
+ .debug_ranges  0x0000000000002110       0xd8 C:/devkitPro/libnds/lib\libnds9.a(background.o)
+ .debug_ranges  0x00000000000021e8      0xde0 C:/devkitPro/libnds/lib\libnds9.a(sprite_alloc.o)
+ .debug_ranges  0x0000000000002fc8       0x58 C:/devkitPro/libnds/lib\libnds9.a(system.o)
+ .debug_ranges  0x0000000000003020       0xf0 C:/devkitPro/libnds/lib\libnds9.a(trig.o)
+ .debug_ranges  0x0000000000003110       0x30 C:/devkitPro/libnds/lib\libnds9.a(sd.twl.o)

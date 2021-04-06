@@ -15,7 +15,6 @@ typedef struct{ //make a struct with the values x and y called Object
 void game(){
     int score = 0; //current score
     char sscore[32]; //the string value of score
-    int speed = 1; //speed of objects
     Object player = {50, 90}; //make an Object called player with the x value 50 and y value 90
     Object pollution = {250, 90}; //make an Object called pollution with the x value 250 and y value 90
     NF_LoadSpriteGfx("player", 0, 16, 16); //load sprite gfx from the "nitrofiles" folder called "player" with the id of 0 and the width and height of 16
@@ -47,9 +46,8 @@ void game(){
         
         //this is dealing with pointers, which I can't explain well. Just search up "C Pointers" on Google
         move(&player.x, &player.y, keys); //send the x and y value of the player, along with the value of keys in the move function
-        pollution.x = pollution.x - speed; //make the speed of the pollution the same as the speed value
+        pollution.x--; //decrease the x value of pollution
         if(pollution.x == -50){ //if the x value of pollution is equal to -50,
-            speed++; //increase the speed
             pollution.x = 250; //move the pollution to the other end of the screen
             score = score + 100; //increase the score by 100
             sprintf(sscore, "Score: %d", score); //convert the integer of score to a string in sscore as "Score: [value of score]"
