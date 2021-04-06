@@ -13,6 +13,7 @@ typedef struct{ //make a struct with the values x and y called Object
 }Object;
 
 void game(){
+    int coins = 0; //coins
     int score = 0; //current score
     char sscore[32]; //the string value of score
     Object player = {50, 90}; //make an Object called player with the x value 50 and y value 90
@@ -68,15 +69,22 @@ void game(){
         oamUpdate(&oamMain); //update the OAM
     }
 
-    while(1){
+    while(1){ //while true, repeats forever
         scanKeys(); //scan keys for input
         int keys = keysHeld(); //boolean if keys are held
         if(keys & KEY_START) break; //if keys are held, break out the loop, which would bring us to the title screen as main.c is a while true loop itself
         NF_WriteText(1, 0, 9, 5, "YOU LOST!"); //make text on top screen, layer 0, 9 x; 5 y; saying "YOU LOST!"
         sprintf(sscore, "Total Game Score: %d", score); //convert score into a string and store it in sscore
         NF_WriteText(1, 0, 5, 7, sscore); //write text stored in sscore
-        NF_WriteText(1, 0, 7, 12, "Try again?"); //write text saying "Try again?"
-        NF_WriteText(1, 0, 3, 14, "Press START to try again!"); //write text explaining how to try again
+        while(1){ //while true, repeats forever
+            sprintf(sscore, "Total Coins Earned: $%d", coins); //convert coins into a string and store it in sscore
+            if(coins == score / 2) break; // if coins are equal to the score divided by two, break out the loop
+            coins++; //increment coins by 1
+            NF_WriteText(1, 0, 3, 12, sscore); //write text on bottom screen layer 0, 3x; 12y with the text of score (this gives the increment animation)
+            NF_UpdateTextLayers(); //update the text layers (this makes the animation visible)
+        }
+        NF_WriteText(1, 0, 7, 16, "Try again?"); //write text saying "Try again?" //12
+        NF_WriteText(1, 0, 3, 18, "Press START to try again!"); //write text explaining how to try again //14
         NF_UpdateTextLayers(); //update the text layers
 
         NF_SpriteOamSet(0); //set the OAM on the top screen
